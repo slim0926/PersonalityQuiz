@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.slim0926.personalityquiz.ui.MainActivity"
+    android:background="@android:color/holo_orange_light">
+
+
+    <TextView
+        android:text="Which Animal Are You?"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="24sp"
+        android:id="@+id/titleTextView"
+        android:textColor="@android:color/white"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="27dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/state1"
+        android:textSize="18sp"
+        android:textColor="@android:color/white"
+        android:layout_marginTop="17dp"
+        android:layout_below="@+id/titleTextView"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="37dp"
+        android:layout_marginStart="37dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/state2"
+        android:textSize="18sp"
+        android:textColor="@android:color/white"
+        android:layout_below="@+id/state1"
+        android:layout_alignLeft="@+id/state1"
+        android:layout_alignStart="@+id/state1"
+        android:layout_marginTop="16dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/state3"
+        android:textSize="18sp"
+        android:textColor="@android:color/white"
+        android:layout_below="@+id/state2"
+        android:layout_alignLeft="@+id/state2"
+        android:layout_alignStart="@+id/state2"
+        android:layout_marginTop="16dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:id="@+id/state4"
+        android:textColor="#ffffffff"
+        android:layout_below="@+id/state3"
+        android:layout_alignLeft="@+id/state3"
+        android:layout_alignStart="@+id/state3"
+        android:layout_marginTop="16dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/state5"
+        android:textSize="18sp"
+        android:textColor="#ffffffff"
+        android:layout_below="@+id/state4"
+        android:layout_alignLeft="@+id/state4"
+        android:layout_alignStart="@+id/state4"
+        android:layout_marginTop="16dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:id="@+id/state6"
+        android:textColor="#ffffffff"
+        android:layout_marginTop="16dp"
+        android:layout_below="@+id/state5"
+        android:layout_alignLeft="@+id/state5"
+        android:layout_alignStart="@+id/state5" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/state7"
+        android:textSize="18sp"
+        android:textColor="#ffffffff"
+        android:layout_below="@+id/state6"
+        android:layout_alignLeft="@+id/state5"
+        android:layout_alignStart="@+id/state5"
+        android:layout_marginTop="16dp" />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:id="@+id/state8"
+        android:textColor="#ffffffff"
+        android:layout_below="@+id/state7"
+        android:layout_alignLeft="@+id/state7"
+        android:layout_alignStart="@+id/state7"
+        android:layout_marginTop="16dp" />
+
+
+    <Button
+        android:text="Submit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/submitButton"
+        android:textColor="@android:color/holo_red_light"
+        android:background="#ffffffff"
+        android:layout_marginBottom="41dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
+
+    <Spinner
+        android:layout_height="wrap_content"
+        android:id="@+id/spinner1"
+        android:layout_alignTop="@+id/state1"
+        android:spinnerMode="dropdown"
+        android:layout_width="wrap_content"
+        android:layout_marginRight="37dp"
+        android:layout_marginEnd="37dp"
+        android:layout_marginStart="220dp"
+        android:layout_marginLeft="220dp"/>
+
+    <Spinner
+        android:layout_height="wrap_content"
+        android:id="@+id/spinner2"
+        android:layout_alignTop="@+id/state2"
+        android:spinnerMode="dropdown"
+        android:layout_width="wrap_content"
+        android:layout_marginStart="220dp"
+        android:layout_marginLeft="220dp"
+        android:layout_marginRight="37dp"
+        android:layout_marginEnd="37dp" />
+
+    <Spinner
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/state3"
+        android:layout_marginStart="220dp"
+        android:layout_marginLeft="220dp"
+        android:id="@+id/spinner3"
+        android:spinnerMode="dropdown"
+        android:layout_marginRight="40dp"
+        android:layout_marginEnd="40dp"/>
+
+    <Spinner
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/state4"
+        android:layout_marginStart="220dp"
+        android:layout_marginLeft="220dp"
+        android:id="@+id/spinner4"
+        android:spinnerMode="dropdown"
+        android:layout_marginRight="37dp"
+        android:layout_marginEnd="37dp"/>
+
+    <Spinner
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/state5"
+        android:layout_marginStart="220dp"
+        android:layout_marginLeft="220dp"
+        android:id="@+id/spinner5"
+        android:spinnerMode="dropdown"
+        android:layout_marginRight="37dp"
+        android:layout_marginEnd="37dp"/>
+
+    <Spinner
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/spinner6"
+        android:layout_alignTop="@+id/state6"
+        android:layout_marginStart="220dp"
+        android:layout_marginLeft="220dp"
+        android:spinnerMode="dropdown"
+        android:layout_marginRight="37dp"
+        android:layout_marginEnd="37dp"/>
+
+    <Spinner
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/state7"
+        android:layout_marginStart="220dp"
+        android:layout_marginLeft="220dp"
+        android:id="@+id/spinner7"
+        android:spinnerMode="dropdown"
+        android:layout_marginRight="37dp"
+        android:layout_marginEnd="37dp"/>
+
+    <Spinner
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/state8"
+        android:layout_marginStart="220dp"
+        android:layout_marginLeft="220dp"
+        android:id="@+id/spinner8"
+        android:spinnerMode="dropdown"
+        android:layout_marginRight="37dp"
+        android:layout_marginEnd="37dp"/>
+
+
+</RelativeLayout>
